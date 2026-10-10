@@ -1,0 +1,24 @@
+name: Test formula
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  brew:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      # Install from this checkout, not from the default branch the tap
+      # command would otherwise clone, so a push tests what it pushes.
+      - run: |
+          tap="$(brew --repository mark-brannan/tap)"
+          mkdir -p "$(dirname "$tap")"
+          ln -s "$GITHUB_WORKSPACE" "$tap"
+      - run: brew install --build-from-source mark-brannan/tap/languette && brew test languette
