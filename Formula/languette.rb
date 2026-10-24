@@ -3,8 +3,8 @@ class Languette < Formula
 
   desc "Fail-closed guards against risky actions by coding agents"
   homepage "https://github.com/mark-brannan/languette"
-  url "https://github.com/mark-brannan/languette/archive/refs/tags/v0.0.4.tar.gz"
-  sha256 "a7289edbbfbdf74fdf5eb8550fcd1c4facaecff0f5139ab396e2ff35fde719eb"
+  url "https://github.com/mark-brannan/languette/archive/refs/tags/v0.0.5.tar.gz"
+  sha256 "bfb649311504b866a2b5520fd0c997f4335fd7ff67d975e8ed61a24c6efaadda"
   license "AGPL-3.0-or-later"
 
   depends_on "gh"
