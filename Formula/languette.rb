@@ -6,8 +6,8 @@ class Languette < Formula
   # url and sha256 are written by languette's publish workflow on each
   # release (.github/workflows/publish.yml, job `homebrew`); don't bump
   # them by hand.
-  url "https://github.com/mark-brannan/languette/archive/refs/tags/v0.0.26.tar.gz"
-  sha256 "9e5a010e234c95fe69f0e61d194d8de3ea226426fca0e7534672f63ab1987fac"
+  url "https://github.com/mark-brannan/languette/archive/refs/tags/v0.0.27.tar.gz"
+  sha256 "385ea90f09f315bda66d1cb4779cc2da791b43fc21469bfcff5673fc90d73131"
   license "AGPL-3.0-or-later"
 
   depends_on "gh"
